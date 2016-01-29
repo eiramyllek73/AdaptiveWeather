@@ -22,7 +22,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-Lg-c6J">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cloud_small" translatesAutoresizingMaskIntoConstraints="NO" id="aO8-wu-uM9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" preservesSuperviewLayoutMargins="YES" image="cloud_small" translatesAutoresizingMaskIntoConstraints="NO" id="aO8-wu-uM9">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="300" id="FrO-DF-dHG"/>
@@ -34,7 +34,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="topMargin" relation="lessThanOrEqual" secondItem="aO8-wu-uM9" secondAttribute="top" multiplier="0.4" id="ZdP-pK-MhR"/>
-                                    <constraint firstItem="aO8-wu-uM9" firstAttribute="centerX" secondItem="TiE-Lg-c6J" secondAttribute="centerX" id="lHD-b2-hLS"/>
                                 </constraints>
                                 <variation key="heightClass=compact" ambiguous="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
@@ -51,13 +50,7 @@
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cupertino" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d61-uq-IWt">
                                                 <rect key="frame" x="0.0" y="0.0" width="613" height="177"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm7-eD-Fyp">
-                                                <rect key="frame" x="-228" y="0.0" width="456" height="299"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="250"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="149"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -65,12 +58,26 @@
                                         <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
                                         <color key="tintColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.96862745098039216" alpha="0.90347521549999998" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="bm7-eD-Fyp" firstAttribute="centerX" secondItem="BJx-3J-xyU" secondAttribute="centerX" id="7sA-eb-219"/>
                                             <constraint firstItem="2YG-vc-umg" firstAttribute="centerX" secondItem="BJx-3J-xyU" secondAttribute="centerX" id="Jig-mh-xrp"/>
                                             <constraint firstItem="2YG-vc-umg" firstAttribute="top" secondItem="BJx-3J-xyU" secondAttribute="top" constant="10" id="lGd-2m-V92"/>
                                         </constraints>
+                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="456" height="50"/>
+                                        </variation>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm7-eD-Fyp">
+                                        <rect key="frame" x="-228" y="0.0" width="456" height="299"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="250"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="50" width="456" height="299"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
+                                <variation key="heightClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="456" height="349"/>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.6705882352941176" blue="0.96862745098039216" alpha="0.90347521549999998" colorSpace="calibratedRGB"/>
